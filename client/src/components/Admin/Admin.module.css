@@ -1,0 +1,41 @@
+.admin_wrapper {
+    padding: 20px;
+    max-width: 1440px;
+    align-content: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.adminItemWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add_review_wrapper {
+    max-width: 50%;
+    margin: 0 auto;
+}
+.review_input {
+    margin-bottom: 10px;
+}
+.review_input:last-child {
+    margin-bottom: 0;
+}
+
+.delete_btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/*form*/
+.title {
+    margin-bottom: 20px;
+}
+.form_wrapper {
+    justify-content: center;
+}
+.form_button {
+    width: 100%;
+    margin-bottom: 15px;
+}

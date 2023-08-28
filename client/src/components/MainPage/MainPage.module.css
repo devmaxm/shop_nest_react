@@ -1,0 +1,312 @@
+/*slider*/
+.wrapper {
+    max-width: 1440px;
+    padding: 0 20px;
+    position: relative;
+    margin: 0 auto;
+    background: white;
+}
+
+.carousel_img_wrapper {
+    max-width: 100%;
+}
+
+.carousel_photo {
+    width: 100%;
+}
+
+/*Goods*/
+.goods_container {
+    width: 100%;
+    background: #f6f6f6
+}
+
+.good_item_wrapper {
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+
+.good_item_wrapper:first-child {
+    padding-left: 0;
+}
+
+.good_item_wrapper:last-child {
+    padding-right: 0;
+}
+
+.good_card {
+    background: #f6f6f6;
+    padding: 15px 20px;
+    display: flex;
+    /*min-height: 180px;*/
+}
+
+.good_img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.good_info {
+    padding: 20px 0 0 40px;
+}
+
+.good_title {
+    font-size: 20px;
+    color: #231f20;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.good_description {
+    color: #231f20;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 15px
+}
+.redirect_link {
+    color: #0a84ff;
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+    margin-bottom: 0;
+    transition: color .2s ease;
+}
+.redirect_link_icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    border: 1px solid #0a84ff;
+    color: #0a84ff;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    font-size: 13px;
+    line-height: 8px;
+    margin-top: -2px;
+    text-align: center;
+    transition: border-color .2s ease,color .2s ease;
+}
+
+
+
+/*Rubrics*/
+.rubric_wrapper {
+    background-color: #f6f6f6;
+    background-repeat: no-repeat;
+    padding: 30px;
+    height: 100%;
+}
+.middle_rubrics {
+    display: none;
+}
+.small_rubrics {
+    display: none;
+}
+
+.rubric {
+    padding: 5px;
+}
+
+.rubric_title {
+    font-size: 24px;
+    line-height: 26px;
+    color: #231f20;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.iphone_rubric {
+    box-sizing: border-box;
+    height: 636px;
+    background-size: 300px;
+    background-image: url("../../assets/rubrics/iphone.png");
+    background-position: center 150px;
+}
+.mac_rubric {
+    background-image: url("../../assets/rubrics/mac.png");
+    background-position: center 120px;
+    background-size: 470px;
+}
+.middle_r {
+    height: 285px;
+}
+.small_r {
+    height: 285px;
+}
+.apple_watch_rubric {
+    background-position: center 90px;
+    background-size: 216px;
+    background-image: url("../../assets/rubrics/watch.png");
+}
+.tv_rubric {
+    background-image: url("../../assets/rubrics/tv.png");
+    background-size: 250px;
+    background-position: center;
+}
+.ipad_rubric {
+    background-position: center 100%;
+    background-size: 270px;
+    background-image: url("../../assets/rubrics/ipad.png");
+}
+.accessories_rubric {
+    background-image: url("../../assets/rubrics/accessories.png");
+    background-position: bottom 20px center;
+    background-size: 336px;
+}
+
+
+
+/*Question*/
+.question {
+    margin-top: 30px;
+    padding: 80px 0;
+    border-top: 1px solid #e0e0e0;
+    width: 100%;
+}
+.question_wrapper {
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.question_title {
+    color: #231f20;
+    font-size: 24px;
+    font-weight: 300;
+}
+.question_text {
+    color: #898989;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/*question form*/
+.question_input_wrapper {
+    width: 100%;
+    margin-bottom: 25px;
+}
+.question_input_wrapper:last-child {
+    margin-bottom: 0;
+}
+.question_input {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    border: 1px solid #e0e0e0;
+    padding: 6px 15px;
+    outline: none;
+}
+.question_input.error {
+    border: 1px solid red;
+}
+.error_message {
+    text-align: start;
+    color: #d32f2f;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.send_question_btn {
+    width: 100%;
+    height: 100%;
+    color: #0a84ff;
+    font-size: 14px;
+    font-weight: 300;
+    background: 0 0;
+    border: 1px solid #0a84ff;
+    border-radius: 4px;
+    transition: all .2s ease;
+    cursor: pointer;
+    padding: 6px 15px;
+}
+.send_question_btn:hover {
+    background: #0a84ff;
+    color: #fff
+}
+
+
+@media (max-width: 1200px) {
+    .wrapper {
+        max-width: 992px;
+    }
+    .good_title {
+        font-size: 18px;
+    }
+    .good_description {
+        font-size: 14px;
+    }
+    .good_info {
+        padding: 20px 0 0 20px;
+    }
+
+    .large_rubrics {
+        display: none;
+    }
+    .middle_rubrics {
+        display: flex;
+    }
+    .mac_rubric {
+        background-position: center 100px;
+    }
+}
+
+@media (max-width: 900px) {
+    .good_item_wrapper {
+        padding: 10px 0 0 10px;
+    }
+
+    .good_item_wrapper:first-child {
+        padding-left: 0;
+    }
+
+    .good_item_wrapper:last-child {
+        padding-left: 0;
+    }
+
+    .question_info {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .wrapper {
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 772px) {
+    .middle_rubrics {
+        display: none;
+    }
+    .small_rubrics {
+        display: flex;
+    }
+    .iphone_rubric {
+        background-position: center 90px;
+    }
+    .apple_watch_rubric {
+        background-position: center 70px;
+    }
+}
+
+@media (max-width: 599px) {
+    .good_img {
+        max-width: 110px;
+        max-height: 110px;
+    }
+    .good_item_wrapper {
+        padding: 0 0 10px 0;
+    }
+    .good_info {
+        padding: 20px 0 0 40px;
+    }
+
+    .mac_rubric {
+        background-size: 300px;
+        background-position: center 150px;
+    }
+    .apple_watch_rubric {
+        background-size: 180px;
+        background-position: center 100px
+    }
+}
